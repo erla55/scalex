@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+         padding: 0px;
+         border: 0px;
+         margin: 0px;
+         outline: 0px;
+        }
+        
+        .navbar div{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 30px;
+            font-style: initial;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(50, 24, 86);
+            margin-bottom: 3px;
+        }
+        .navbar a{
+            color: white;
+        }
+        .cont1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+       
+            font-style: bolder;
+            background-color: rgb(50, 24, 86);
+            width: 100%;
+            height: 35vh;
+        }
+         .c1{
+            color: white;
+        }
+        .c2{
+            color: rgb(255, 166, 0);
+        }
+        .c3{
+            color: white;
+        }
+        .c4{
+            color: rgb(255, 166, 0);
+        }
+        .cont2{
+            width: 70%;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+           margin: auto;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+           
+            
+        }
+        .cont2 span{
+            color:  rgb(50, 24, 86);
+            font-weight: bold;
+        }
+        
+        .b1 h2{
+            font-size: 40px;
+            color: white;
+          
+        }
+        .b1{
+            width: 20%;
+            height: 10vh;
+            border-color: 2px 2px 2px white;
+            border: 2px 2px 2px white;
+             
+        }
+        .sto{
+            font-style: normal;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            flex-wrap: wrap;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .sto p{
+            display: flex;
+            text-align: center;
+        }
+      
+        .v1{
+            width: 38%;
+            height: 55vh;
+            background-color:  rgb(50, 24, 86);
+            margin-bottom: 60px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            margin-left: 19vh;
+          
+        }
+        .v1 .ifr{
+            width:100%;
+            height:77% ;
+            text-align: center;
+          
+         
+            
+           
+            
+        }
+        .ifr iframe{
+            width: 100%;
+            height: 100%;
+           
+         
+        }
+        .v2{
+            width: 38%;
+            height: 55vh;
+            background-color:  rgb(50, 24, 86);
+            margin-bottom: 60px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            margin-right: 19vh;
+        }
+        .v2 .ifr2{
+            width:100%;
+            height:77% ;
+            text-align: center;
+            margin-top: 8px;
+            
+            
+        }
+        .ifr2 iframe{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .v3{
+            width: 38%;
+            height: 55vh;
+            background-color:  rgb(50, 24, 86);
+            margin-bottom: 60px;
+            box-sizing: border-box;
+            border-radius: 15px; 
+        
+            margin-left: 19vh;
+
+        }
+        .v3 .ifr3{
+            width:100%;
+            height:77% ;
+            text-align: center;
+            margin-top: 8px;
+
+           
+            
+        }
+        .ifr3 iframe{
+            width: 100%;
+            height: 100%;
+        }
+        .v4{
+            width: 38%;
+            height: 55vh;
+            background-color:  rgb(50, 24, 86);
+            margin-bottom: 60px;
+            box-sizing: border-box;
+            border-radius: 15px; 
+            margin-right: 19vh;
+
+        }
+        .v4 .ifr4{
+            width:100%;
+            height:77% ;
+            text-align: center;
+            margin-top: 8px;
+
+           
+            
+        }
+        .ifr4 iframe{
+            width: 100%;
+            height: 100%;
+        }
+
+        .vcont{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 30px;
+            box-sizing: border-box;
+            margin-right: 20px;
+           
+        }
+        .v1 p{
+            font-size: 25px;
+            color: white;
+            text-align: center;
+        }
+        .v2 p{
+            font-size: 25px;
+            color: white;
+            text-align: center;
+        }
+        .v3 p{
+            font-size: 25px;
+            color: white;
+            text-align: center;
+        }
+        .v4 p{
+            font-size: 25px;
+            color: white;
+            text-align: center;
+        }
+        .peop {
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            margin-top: 15vh;
+        }
+        .peop p{
+            font-size: 30px;
+            background-color:  rgb(50, 24, 86);
+            color: white;
+           font-style: normal;
+           text-align: center;
+           padding-top: 25vh;
+        }
+        
+       
+        .cont3 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(50, 24, 86);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.subcont {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+   
+    
+}
+
+.u1,
+.u2 {
+    width: 40%; 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid white;
+    
+     
+}
+
+.u3 {
+    width: 100%;
+    height: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 15px;
+   margin-left: 50px;
+   
+}
+
+.u3 p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.u3 img {
+    width: 20px;
+    height: 20px;
+}
+
+.vid1 {
+    width: 40%;
+    height: 35vh;
+    border-radius: 15px; 
+    padding-left: 90px;
+   
+}
+.vid1 .vdata{
+    width: 100%;
+    height: 100%;
+}
+.vid1 iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.sub1{
+    width: 100%;
+    max-width: 600px;
+    padding-bottom: 100px;
+}
+.sub1 .t1{
+    width: 20%;
+    height: 20%;
+    background-color: aqua;
+}
+
+   .peop{
+    width: 100%;
+    height: 30vh;
+    background-color:rgb(50, 24, 86);
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content:center;
+    padding: 40px;
+    gap: 20px;
+   
+   
+   }
+   .peop .imgw{
+    width: 100px;
+    height: 100px;
+   
+   }
+         .peop img{
+            width: 100%;
+            height: 100%;
+         }
+         .peop .para{
+            width: 1000px;
+            color: white;
+            font-size: 30px;
+            text-align:center;
+          
+         }
+         
+         .test{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            width: 100%;
+            height: 40vh;
+         }
+         .cont5{
+            width: 100%;
+            height:100vh;
+            background-color:rgb(50, 24, 86);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         .reg{
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+            padding-bottom: 50px;
+          
+           
+         }
+        
+         .reg p{
+            font-size: 26px;
+            color: white;
+         }
+       
+         
+         .ser{
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            padding-top: 30px;
+            font-size: 25px;
+         }
+         .ser1{
+            font-size: 30px;
+            color: rgba(252, 122, 1, 0.977);
+            padding-top: 15px;
+         }
+         .ser3{
+            padding-top: 50px;
+         }
+         
+         .bot {
+           text-align:justify; 
+              
+            padding-left: 150px;
+}
+
+.checkbox-wrapper {
+    margin-bottom: 10px; 
+    
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    margin-right: 10px; 
+   
+   
+    
+}
+
+.checkbox-wrapper label {
+    font-size: 30px; 
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .cont1 { font-size: 25px; height: 30vh; }
+    .cont2 { font-size: 20px; height: 15vh; }
+    .navbar div { font-size: 20px; }
+    .cont3 { height: 60vh; }
+    .subcont { flex-direction: column; }
+    .u1, .u2, .u3 { width: 100%; margin-bottom: 20px; }
+    .u3 { margin-left: 0; }
+    .peop { padding: 20px; height: auto; align-items: flex-start; }
+    .imgw { width: 80px; height: 80px; }
+    .vcont { justify-content: center; gap: 10px; height: auto; }
+    .v1, .v2, .v3, .v4 { height: auto; font-size: 15px; }
+    .cont5 { padding: 20px; font-size: 15px; width: 90%; height: auto; margin: auto; }
+}
+
+@media screen and (max-width: 1024px) {
+    .cont1 { font-size: 30px; height: 35vh; }
+    .cont2 { font-size: 25px; height: 20vh; }
+    .navbar div { font-size: 25px; }
+    .cont3 { height: 70vh; }
+    .vcont { flex-direction: row; gap: 20px; height: auto; }
+    .peop { padding: 30px; }
+    .imgw { width: 100px; height: 100px; }
+    .cont5 { padding: 30px; width: 100%; height: auto; font-size: 15px; }
+}
+
+@media screen and (min-width: 1200px) {
+    .cont1 { font-size: 35px; height: 40vh; }
+    .cont2 { font-size: 30px; height: 25vh; }
+    .navbar div { font-size: 30px; }
+    .cont3 { height: 80vh; }
+    .vcont { justify-content: space-evenly; gap: 30px; height: auto; }
+    .peop { padding: 40px; }
+    .imgw { width: 120px; height: 120px; }
+    .cont5 { padding: 40px; width: 100%; height: auto; font-size: 15px; }
+}
+
+
+    </style>
+   
+</head>
+<body>
+    <>
+    <div class="navbar">
+        <div id="targetElement">
+        <h2>Seats are filling fast...<a href="n.html">Register Now</a></h2></div>
+    </div>
+    <div class="cont1">
+          <h4 class="c1">Unleash The</h4>
+          <h4 class="c2">"POWER OF SUBCONSCIOUS MIND"</h4>
+          <h4 class="c3">To Create Massive Growth</h4>
+          <h4 class="c4">"IN 2024"</h4>
+    </div>
+    <div class="cont2">
+        <p>3 hours practical workshop that teaches you <span>"HIDDEN SECRETS OF SUBCONSCIOUS MIND"</span></p>
+           <p> which has helped <span>5000+ people achieve significant growth, abundance & success.</span></p>
+    </div>
+    <div class="cont3">
+        <div class="subcont">
+            <div class="u1">
+                <h1>5,100+</h1>
+                <p>have joined this workshop</p>
+            </div>
+            <div class="u2">
+                <div>
+                   
+                    <h1> <i class="fa-solid fa-star" style="color: #ffa200;"></i>9.94/10</h1>
+                </div>
+                <p>average rating</p>
+            </div>
+            <div class="u3">
+                <p>
+                    <i class="fa-regular fa-clock" style="color: #ffae00;"></i> 3+ Hours Total |
+                    <i class="fa-sharp fa-solid fa-calendar-days" style="color: #b8e663;"></i> 28th April 2024
+                </p>
+                <div>
+                    <i class="fa-solid fa-video" style="color: #ffc800;"></i> Live Session |
+                    <img src="11.svg" alt=""/> 09:30 AM to 01:30 PM
+                </div>
+            </div>
+        </div>
+        <div class="vid1">
+            <div class="vdata"> <iframe loading="lazy" class="elementor-video-iframe entered lazyload" allowfullscreen title="vimeo video player" src="https://player.vimeo.com/video/678057031?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=" data-rocket-lazyload="fitvids compatible" data-lazy-src="https://player.vimeo.com/video/678057031?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=" data-ll-status="loaded" width="100%" height="100%"></iframe></div></div>
+        <div class="sub1">
+            <div class="t1"></div>
+            <div class="t2"></div>
+            <div class="t3"></div>
+        </div>
+    </div>
+    
+    </div>
+
+          
+      
+       
+    </div>
+      <div class="sto">
+        <p>Stories of Success</p>  </div>
+        <div class="vcont">
+        <div class="v1">
+            <div class="ifr">
+                <iframe loading="lazy" class="elementor-video-iframe entered lazyloaded" allowfullscreen title="vimeo Video Player" src="https://player.vimeo.com/video/678057031?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://player.vimeo.com/video/678057031?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=" data-ll-status="loaded" width="100%" height="100%"></iframe></div>
+           <p>Left 20 years of smoking habit & finally started his dream business</p>
+        </div>
+        <div class="v2">
+            <div class="ifr2">
+                <iframe loading="lazy" class="elementor-video-iframe entered lazyloaded" allowfullscreen title="vimeo Video Player" src="https://player.vimeo.com/video/678059078?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://player.vimeo.com/video/678059078?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=" data-ll-status="loaded"></iframe>
+            width="100%" height="100%"></iframe></div>
+           <p>Overcoming 20 years of negative beliefs & becoming the master in handling emotions</p>
+        </div>
+        <div class="v3">
+            <div class="ifr3">
+            <iframe loading="lazy" class="elementor-video-iframe entered lazyloaded" allowfullscreen title="vimeo Video Player" src="https://player.vimeo.com/video/682537825?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://player.vimeo.com/video/682537825?color&autopause=0&loop=0&muted=0&title=1&portrait=1&byline=1#t=" data-ll-status="loaded" width="100%" height="100%"></iframe></div>
+            <p>Left high - paying job to start his own venture & grew his earning by 5 times</p>
+        </div>
+        <div class="v4">
+            <div class="ifr4">
+            <iframe loading="lazy" class="elementor-video-iframe entered lazyloaded" allowfullscreen title="vimeo Video Player" src="https://player.vimeo.com/video/678070703?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0#t=" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://player.vimeo.com/video/678070703?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0#t=" data-ll-status="loaded" width="100%" height="100%"></iframe></div>
+            <p>A miraculous out of turn - 15 % hike 
+                in his appraisal</p>
+        </div>
+    </div>
+    <div class="peop">
+        <div class="imgw"><img src="https://avinashanandsingh.in/wp-content/uploads/2023/07/New-Project-8-1.png"/></div>
+        <div class="para">People have<span style="color: #ffa200;"> got high paying job opportunities, built businesses, & transformed their life</span> once they tapped the hidden power inside.</div>
+    </div>
+    <div class="test">
+        <i class="fa-solid fa-gift" style="color: #404040;"></i>
+        <p>Click On This Button & Reserve Your Seat in 5 Minutes to</p>
+        <h>Unlock Bonuses worth Rs.7,999 for FREE</h>
+    </div>
+    <div class="cont5">
+        <div class="reg">
+            <p> <i class="fa-regular fa-circle-check" style="color: #ffa200;"></i>Please Check All Boxes Where Your Answer Is YES!</p></div>
+            <div class="bot">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="refuse_less" /> <label for="refuse_less">I always refuse to settle for less</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="energetic_day" /> <label for="energetic_day">I want to have an energetic & productive day</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="burning_desire" /> <label for="burning_desire">I have a burning desire to create abundance</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="massive_success" /> <label for="massive_success">I am willing to create massive success</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="manifest_abundance" /> <label for="manifest_abundance">I want to manifest higher abundance in job/work</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="abundance_tools" /> <label for="abundance_tools">I want to know how to apply Abundance Mindset Tools</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="set_goals" /> <label for="set_goals">I want to learn how to set goals in the right way</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="abundance_secrets" /> <label for="abundance_secrets">I want to learn core abundance secrets I need to change my life for the better</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="achieve_goals" /> <label for="achieve_goals">I want to achieve all my goals</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="manage_time" /> <label for="manage_time">I want to manage my time</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="happy_life" /> <label for="happy_life">I want to have a happy, abundant, healthy, and harmonious life</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="energetic_day_2" /> <label for="energetic_day_2">I want to have an energetic & productive day</label>
+                </div>
+            </div>
+            
+    </div>
+    <div class="ser">
+        <div class="ser2">If you checked ANY of the boxes above, then you're invited to join
+        </div>
+        <div class="ser1">The 3 Hours "Reprogramming Your Subconscious Mind Masterclass".</div>
+        <div class="ser3">Results workshop participants have been getting:</div>
+    </div>
+   
+
+        
+
+</div>
+
+
+</body>
+</html>

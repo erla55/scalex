@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Overall container for the masterclass */
+        body {
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+
+
+
+        .masterclass-container {
+            width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          
+        }
+
+        /* Left side: Event details */
+        .event-details {
+            width: 30%;
+            height: auto;
+            font-size: 15px;
+            flex: 1;
+            /* padding-right: 20px; */
+            padding-left: 150px;
+        }
+       .event{
+        display: flex;
+        font-weight: bold;
+        color: #777;
+       }
+        .company-logo {
+            max-width: 40px;
+            margin-bottom: 10px;
+           
+        }
+
+        .masterclass-name {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .bonus-session {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .contact-info {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        /* Right side: Payment form */
+        .payment-form {
+            
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pay {
+    margin-bottom: 5px;
+}
+
+.payment-form label,
+.payment-form input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.payment-form label {
+    width: 25%;
+}
+
+.payment-form input[type="text"],
+.payment-form input[type="email"] {
+    width: 65%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.payment-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+.payment-options{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+   
+}
+.pay-button{
+    background-color: #007bff;
+    color: white;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+.img{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.payment-options img{
+    width: 20px;
+    height: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+/* For screens smaller than 768px (e.g., tablets) */
+@media (max-width: 768px) {
+    .masterclass-container {
+        flex-direction: column;
+    }
+
+    .event-details,
+    .payment-form {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .event-details {
+        padding-left: 20px;
+    }
+
+    .payment-form {
+        padding: 15px;
+    }
+
+    .payment-form input[type="text"],
+    .payment-form input[type="email"] {
+        width: 100%;
+    }
+
+    .payment-options {
+        flex-direction: column;
+    }
+
+    .pay-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .img {
+        
+        align-items: center;
+    }
+}
+
+/* For screens smaller than 576px (e.g., mobile phones) */
+@media (max-width: 576px) {
+    .event-details,
+    .payment-form {
+        width: 100%;
+    }
+
+    .event-details {
+        padding-left: 10px;
+    }
+
+    .payment-form {
+        padding: 10px;
+    }
+
+    .payment-form input[type="text"],
+    .payment-form input[type="email"] {
+        width: 100%;
+    }
+
+    .img {
+        
+        align-items: center;
+    }
+
+    .payment-options img {
+        margin-bottom: 10px;
+    }
+
+    .pay-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="masterclass-container">
+        <div class="event-details">
+           <div class="event"><img src="ana.img" alt="Company Logo" class="company-logo">
+        <p>Blue Dot Transform Consulting Pvt Ltd</p></div> 
+            <p class="masterclass-name">3-Hour RSM Masterclass M1</p>
+            <p class="bonus-session">LAST FEW SPOTS LEFT. HURRY UP.</p>
+            <p class="bold"> Click "Next" to pay!</p>
+            <p class="bold">Date: 28th April 2024 (Sunday)</p>
+            <p class="bold">Time: 09:30 am – 1:30 pm IST</p>
+           <p>(3 hours + 1 hour Bonus session on Visualization)</p>
+            <p style="font-size: 25px;">Venue </p>
+            <p>Zoom</p>
+            <a href="#">Show More</a>
+            <p class="contact-info">Contact Us: <a href="mailto:support@vishwanathandsingh.com">support@vishwanathandsingh.com</a> | +919834741460</p>
+        </div>
+        <div class="payment-form">
+        <form >
+
+            <div class="pay"> Payment Details</div>
+            <div style="width:30px;height: 6px;background-color: #007bff;border-radius: 4px;margin-bottom: 5px;"></div>
+            <div class="payment-form1">
+                <div class="pay">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="pay">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="pay">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" placeholder="Phone">
+                </div>
+                <div class="pay">
+                    <label for="amount">Amount:</label>
+                    <input type="text" id="amount" placeholder="Amount" value="₹99.00">
+                </div>
+                <div class="payment-options">
+                    <div class="img">
+                        <img src="https://economictimes.indiatimes.com/thumb/msid-74960608,width-1200,height-900,resizemode-4,imgsize-49172/upi-twitter.jpg?from=mdr" alt="UPI">
+                        <img src="vis.img" alt="RuPay">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.png" alt="">
+                        <img src="ru.jpeg" alt="RuPay">
+                        <img src="pc.img" alt="Visa">
+                        
+                       
+                    </div>
+                    <div class="pay-button">
+                        <div>Pay ₹99</div>
+                    </div>
+
+            </div>
+            
+            
+        </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
